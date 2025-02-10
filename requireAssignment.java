@@ -2,20 +2,38 @@ import java.util.Scanner;
 
 public class requireAssignment {
     public static void main(String[] abra) {
-        Scanner scanner = new Scanner(System.in);
+       Scanner scanner = new Scanner(System.in);
  
         double assessment,examScore,fees;
         
-        System.out.print("Enter your examScore: ");
+     System.out.print("Enter your examScore: ");
         examScore=scanner.nextDouble();
         scanner.nextLine();
         System.out.print("Enter your assessment: ");
-        assessment=scanner.nextDouble();
+        assessment=scanner.nextDouble(); 
         scanner.nextLine();
+        for (int i = 0; i >-1 ; i++) {
+            if (examScore>70||assessment>30) { 
+                System.out.println("ExamScore should be less than or equal to 70 & assessment should be less than or equal to 30");
+                System.out.print("Enter your examScore: ");
+                examScore=scanner.nextDouble();
+                scanner.nextLine();
+                System.out.print("Enter your assessment: ");
+                assessment=scanner.nextDouble();
+            } else{
+                break;
+            }
+           
+        }
+        
         System.out.print("Enter the percentage of fees paid(full payment=100%): ");
         fees=scanner.nextDouble();
         System.out.println("Total grade: "+ (examScore+assessment));
-        System.out.println();                       
+        System.out.println();
+        
+        
+           
+       
 
         if (examScore>=25 && assessment>=15) {
             if (fees==100) {
@@ -43,6 +61,19 @@ public class requireAssignment {
                     System.out.println("Exam failed. Fees too no complete. Ah!!");
             }
         }
+
+        if (examScore==25 && assessment==14) {
+            if (fees==100) {
+                System.out.println("You have been condoned");
+            }
+        }
+        if (examScore==24 && assessment==15
+        ) {
+            if (fees==100) {
+                System.out.println("You have been condoned");
+            }
+        }
+
 
         if (examScore<25 && assessment<15) {
             System.out.println("You have failed both and will be repeated!");
