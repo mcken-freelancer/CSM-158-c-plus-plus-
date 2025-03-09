@@ -16,7 +16,7 @@ public class Main {
             System.out.println("You are to attend classes");
         }else{ System.out.println("Get a job");}*/
 
-        String name="Kennedy";
+        String name="😁Kennedy😁";
         int age=23;
         char symbol='$';
         double amount=76999.99;
