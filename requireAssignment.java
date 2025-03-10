@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class requireAssignment {
+public class RequireAssignment {
     public static void main(String[] abra) {
        Scanner scanner = new Scanner(System.in);
  
