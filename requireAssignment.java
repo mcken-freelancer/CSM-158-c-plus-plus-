@@ -28,7 +28,7 @@ public class requireAssignment {
         
         System.out.print("Enter the percentage of fees paid(full payment=100%): ");
         fees=scanner.nextDouble();
-        System.out.println("Total grade: "+ (examScore+assessment));
+        System.out.println("Total Score: "+ (examScore+assessment));
         System.out.println();
         
         
