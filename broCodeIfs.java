@@ -4,7 +4,7 @@ public class broCodeIfs {
     public static void main(String[] args) {
         Scanner scanner=new Scanner(System.in);
 
-        String name;
+       String name;
        
        System.out.println("Enter your name: ");
        name=scanner.nextLine();
@@ -20,7 +20,9 @@ public class broCodeIfs {
                 System.out.println("Hello "+name);
                break;
             }
-        }
+        } 
+
+
       
         scanner.close();
     }
